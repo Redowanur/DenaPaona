@@ -1,33 +1,38 @@
-// import Underline from '../../assets/underline.png';
-import CashPayment from '../../assets/cash-payment.png';
+import { useNavigate } from 'react-router-dom'
+import Logo from '../../assets/logo.png';
+
 
 const HeroSection = () => {
-    return (
-        <div className="w-[90%] max-w-7xl bg-[#00A79D] h-fit mx-auto rounded-2xl">
-            {/* Intro */}
-            <div className='flex justify-between items-center px-10'>
-                <div className='w-150'>
-                    {/* <div className='w-fit relative flex flex-col justify-center items-center'>
-                        <h1 className='text-7xl text-white font-bold'>DenaPaona</h1>
-                        <div className='w-100 absolute top-16'>
-                            <img
-                                src={Underline}
-                                className=''
-                            />
-                        </div>
-                    </div> */}
-                    <p className='mt-10 text-white font-semibold text-8xl'>Split expenses with friends</p>
-                    <p className='text-white mt-5 text-xl'>Keep track of shared expenses and balances with housemates, trips, groups, friends, and family</p>
-                    <button className='bg-white px-5 py-2 text-[#00A79D] font-bold cursor-pointer rounded-xl text-xl mt-5'>Get Started</button>
-                </div>
+    const navigate = useNavigate();
 
-                <div className='w-90'>
-                    <img src={CashPayment} />
+    return (
+        <div className="bg-[#00A79D] relative overflow-hidden mb-20">
+            <div className='w-110 md:w-150 lg:w-200 h-110 md:h-150 lg:h-200 z-0 rounded-full bg-[#0bb0a6] absolute bottom-40 md:bottom-30 lg:bottom-10 -left-30 md:-left-25 lg:-left-20 pointer-events-none' />
+
+            <div className="w-[90%] max-w-7xl mx-auto mt-2 h-18 flex justify-between items-center">
+                <div onClick={() => navigate('/')} className='cursor-pointer z-10'>
+                    <img src={Logo} className='w-40' />
+                </div>
+                <div className='flex gap-6 z-10'>
+                    <button className='bg-white px-5 py-2 text-[#00A79D] font-bold cursor-pointer rounded-xl text-xl'>
+                        Sign In
+                    </button>
                 </div>
             </div>
+            <div className='flex justify-between items-center py-10 lg:py-0 w-[90%] max-w-7xl h-fit mx-auto' >
+                <div className='max-w-2xl z-10'>
+                    <p className='mt-10 text-white font-semibold text-6xl md:text-7xl lg:text-8xl'>Split expenses with friends</p>
+                    <p className='text-white my-5 text-lg md:text-xl lg:text-2xl'>Keep track of shared expenses and balances with housemates, trips, groups, friends, and family</p>
+                    <button className='bg-white px-5 py-2 text-[#00A79D] font-bold cursor-pointer rounded-xl text-xl mb-10'>Get Started</button>
+                </div>
+
+                {/* <div className='h-full z-10 hidden lg:block'>
+                    <img src={CashPayment} />
+                </div> */}
+            </div >
+
         </div>
     )
 }
 
 export default HeroSection
-// #FFCBB2
