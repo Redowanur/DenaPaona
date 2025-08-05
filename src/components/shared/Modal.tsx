@@ -43,7 +43,7 @@ const Modal = ({ isOpen, onClose, children }: ModalType) => {
 						className="relative bg-white rounded-xl shadow-xl p-6 pt-10"
 					>
 						<button
-							className="absolute top-2 right-2 p-1 rounded-lg text-gray-400 hover:text-gray-600"
+							className="absolute top-2 right-2 p-1 rounded-lg text-gray-400 hover:text-gray-600 cursor-pointer"
 							onClick={onClose}
 							aria-label="Close modal"
 						>

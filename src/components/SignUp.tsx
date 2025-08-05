@@ -38,7 +38,7 @@ const SignUp = ({ setSignInVisible }: any) => {
 							{isPasswordVisible2 ? <Eye size={20} color="gray" onClick={() => setPasswordVisible2(false)} /> : <EyeOff size={20} color="gray" onClick={() => setPasswordVisible2(true)} />}
 						</div>
 					</div>
-					<button className='px-6 py-3 font-bold text-white bg-[#00B2A5] transition-all duration-300 rounded-xl text-lg shadow-lg transform hover:scale-105 hover:shadow-xl outline-none w-full'>
+					<button className='px-6 py-3 font-bold text-white bg-[#00B2A5] transition-all duration-300 rounded-xl text-lg shadow-lg transform hover:scale-105 hover:shadow-xl outline-none w-full cursor-pointer'>
 						Sign Up
 					</button>
 				</div>
@@ -48,7 +48,7 @@ const SignUp = ({ setSignInVisible }: any) => {
 				<p className="text-black/50">or</p>
 				<div className="h-[1px] bg-black/15 w-[45%]" />
 			</div>
-			<button className='px-6 py-3 transition-all duration-300 rounded-xl text-lg shadow-md transform hover:scale-105 hover:shadow-lg outline-none w-full flex justify-center items-center gap-3 border border-gray-200 '>
+			<button className='px-6 py-3 transition-all duration-300 rounded-xl text-lg shadow-md transform hover:scale-105 hover:shadow-lg outline-none w-full flex justify-center items-center gap-3 border border-gray-200 cursor-pointer'>
 				<svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
 					<path
 						d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"

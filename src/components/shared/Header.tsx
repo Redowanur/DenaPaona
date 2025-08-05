@@ -29,7 +29,7 @@ const Header = () => {
                 <div onClick={() => navigate('/')} className='cursor-pointer transform hover:scale-105 transition-transform duration-200'>
                     <img src={Logo} className='w-40' />
                 </div>
-                <nav className='hidden md:flex text-white md:justify-center md:items-center gap-10 text-xl'>
+                <nav className='absolute left-[32%] lg:left-[39%] hidden md:flex text-white md:justify-center md:items-center gap-10 text-xl'>
                     {menu.map(item => (
                         <span key={item.text} className={`cursor-pointer ${active === item.text && 'text-yellow-300'}`} onClick={() => {
                             navigate(item.link);

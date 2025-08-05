@@ -36,7 +36,7 @@ const HeroSection = () => {
                     <img src={Logo} className='w-40' />
                 </div>
                 <div className='flex gap-4'>
-                    <button className='bg-white px-6 py-3 text-[#00A79D] font-bold hover:bg-gray-50 transition-all duration-300 rounded-xl text-lg shadow-lg transform hover:scale-105 hover:shadow-xl outline-none' onClick={handleClick} >
+                    <button className='bg-white px-6 py-3 text-[#00A79D] font-bold hover:bg-gray-50 transition-all duration-300 rounded-xl text-lg shadow-lg transform hover:scale-105 hover:shadow-xl outline-none cursor-pointer' onClick={handleClick} >
                         Sign In
                     </button>
                 </div>
@@ -59,11 +59,11 @@ const HeroSection = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                        <button className='group bg-white px-8 py-4 text-[#00A79D] font-bold hover:bg-gray-50 transition-all duration-300 rounded-xl text-xl shadow-lg transform hover:scale-105 hover:shadow-2xl flex items-center gap-2 justify-center'>
+                        <button className='group bg-white px-8 py-4 text-[#00A79D] font-bold hover:bg-gray-50 transition-all duration-300 rounded-xl text-xl shadow-lg transform hover:scale-105 hover:shadow-2xl flex items-center gap-2 justify-center cursor-pointer'>
                             Get Started
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
                         </button>
-                        <button className='bg-transparent border-2 border-white px-8 py-4 text-white font-semibold hover:bg-white hover:text-[#00A79D] transition-all duration-300 rounded-xl text-xl transform hover:scale-105'>
+                        <button className='bg-transparent border-2 border-white px-8 py-4 text-white font-semibold hover:bg-white hover:text-[#00A79D] transition-all duration-300 rounded-xl text-xl transform hover:scale-105 cursor-pointer'>
                             Watch Demo
                         </button>
                     </div>

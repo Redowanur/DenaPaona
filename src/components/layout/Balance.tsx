@@ -1,24 +1,27 @@
+import { ArrowDown, ArrowUp } from "lucide-react"
+
 const Balance = () => {
     return (
-        <>
-            <p className="font-bold text-3xl text-center mb-5">Balance Summery</p>
-            <div className="w-full flex flex-col md:flex-row justify-center items-center gap-5">
-                <div className="bg-green-50 mx-auto rounded-xl border border-green-200 p-5 w-full">
-                    <div className="flex justify-center items-center gap-2 w-fit">
-                        <div className="w-3 h-3 rounded-full bg-green-700" />
-                        <p className="text-lg text-green-700">You're owed</p>
+        <div className="w-full flex lg:flex-col justify-center items-center gap-5 lg:w-[30%] ">
+            <div className="bg-[#00A79D] mx-auto rounded-xl shadow-sm p-5 w-full h-40 flex flex-col justify-center">
+                <div className="flex justify-center items-center gap-1 w-fit">
+                    <div className="flex justify-center items-center text-white">
+                        <ArrowDown />
                     </div>
-                    <p className="font-bold text-3xl  text-green-800">৳ 140 BDT</p>
+                    <p className="text-md md:text-lg text-white font-semibold">You get</p>
                 </div>
-                <div className="bg-red-50 mx-auto rounded-xl border border-red-200 p-5 w-full">
-                    <div className="flex justify-center items-center gap-2 w-fit">
-                        <div className="w-3 h-3 rounded-full bg-red-700" />
-                        <p className="text-lg text-red-700">You owed</p>
-                    </div>
-                    <p className="font-bold text-3xl  text-red-800">৳ 200 BDT</p>
-                </div>
+                <p className="font-bold text-[26px] md:text-3xl text-white">৳ 140 BDT</p>
             </div>
-        </>
+            <div className="bg-white mx-auto rounded-xl shadow-sm p-5 w-full h-40 flex flex-col justify-center">
+                <div className="flex justify-center items-center gap-1 w-fit">
+                    <div className="flex justify-center items-center text-[#00A79D]">
+                        <ArrowUp />
+                    </div>
+                    <p className="text-md lg:text-lg text-[#00A79D] font-semibold ">You owe</p>
+                </div>
+                <p className="font-bold text-[26px] md:text-3xl text-3xl  text-[#00A79D] ">৳ 200 BDT</p>
+            </div>
+        </div>
     )
 }
 
