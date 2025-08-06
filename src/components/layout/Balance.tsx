@@ -2,7 +2,7 @@ import { ArrowDown, ArrowUp } from "lucide-react"
 
 const Balance = () => {
     return (
-        <div className="w-full flex lg:flex-col justify-center items-center gap-5 lg:w-[30%] ">
+        <div className="w-full h-fit flex lg:flex-col justify-center items-center gap-5 ">
             <div className="bg-[#00A79D] mx-auto rounded-xl shadow-sm p-5 w-full h-40 flex flex-col justify-center">
                 <div className="flex justify-center items-center gap-1 w-fit">
                     <div className="flex justify-center items-center text-white">

@@ -8,6 +8,7 @@ import DashBoardPage from './pages/DashBoardPage.tsx'
 import Header from './components/shared/Header.tsx'
 import FriendsPage from './pages/FriendsPage.tsx'
 import GroupsPage from './pages/GroupsPage.tsx'
+import { DeviceProvider } from './contexts/DeviceContext.tsx'
 
 const appRouter = createBrowserRouter([
 	{
@@ -39,6 +40,8 @@ const appRouter = createBrowserRouter([
 
 createRoot(document.getElementById('root')!).render(
 	<StrictMode>
-		<RouterProvider router={appRouter} />
+		<DeviceProvider>
+			<RouterProvider router={appRouter} />
+		</DeviceProvider>
 	</StrictMode>,
 )

@@ -1,6 +1,5 @@
 import { faker } from '@faker-js/faker';
-import { ArrowDown, ArrowUp, Pencil, Trash2 } from 'lucide-react';
-// import Modal from '../shared/Modal';
+import { ArrowDown, ArrowUp, Trash2 } from 'lucide-react';
 
 const transactionTypes = [1, 2];
 const transactionPurposes = [
@@ -38,7 +37,7 @@ const transactions = Array.from({ length: 10 }, generateFakeTransaction);
 
 const RecentActivity = () => {
 	return (
-		<div className="mb-5 lg:w-[70%] ">
+		<div className="mb-5">
 			<p className="text-2xl font-semibold py-3">Recent Activities</p>
 			<div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
 				{transactions.map((item, id) => (
@@ -53,15 +52,10 @@ const RecentActivity = () => {
 							</div>
 						</div>
 
-						<div className='flex md:flex-col justify-center items-center gap-2'>
+						<div className='flex justify-center items-center gap-2'>
 							<p className={`font-bold ${item.type === 1 ? 'text-green-500' : 'text-red-400'}`}>{item.type == 1 ? '+' : '-'}৳{item.amount}{'.00'} </p>
-							<div className='flex justify-center items-center'>
-								<div className='text-gray-500 w-8 h-8 rounded-full flex justify-center items-center cursor-pointer hover:text-green-500 hover:bg-green-50'>
-									<Pencil size={17} />
-								</div>
-								<div className='text-gray-500 w-8 h-8 rounded-full flex justify-center items-center cursor-pointer hover:text-red-500 hover:bg-red-50'>
-									<Trash2 size={17} />
-								</div>
+							<div className='text-gray-500 w-8 h-8 rounded-full flex justify-center items-center cursor-pointer hover:text-red-500 hover:bg-red-50'>
+								<Trash2 size={17} />
 							</div>
 						</div>
 					</div>
